@@ -1,11 +1,11 @@
 <template>
    <lightning-card title="HelloWorld" icon-name="custom:custom14">
-      <div class="slds-m-around_medium">
+      <!-- Output greeting value defined in Js file -->
+      <div class="slds-var-m-around_medium">
          Hello, {greeting}!
       </div>
-      <div class="slds-m-around_medium">
-         Bind an HTML element to a component property.
-      </div>
+      
+      <!-- Add component to link to source code on Github-->
       <c-view-source source="lwc/hello" slot="footer">
          Bind an HTML element to a component property.
      </c-view-source>
