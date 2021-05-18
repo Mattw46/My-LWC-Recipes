@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="LdsGenerateRecordInputForCreate" icon-name="standard:record">
+       <div class="slds-var-m-around_medium">
+         <lightning-input 
+            label="Name" 
+            onchange={handleNameChange}
+         ></lightning-input>
+         <lightning-input 
+            label="Area Number" 
+            value="1,000"
+            onchange={handleAreaChange}
+         ></lightning-input>
+         <lightning-button
+            label="Create Account"
+            variant="brand"
+            onclick={handleClick}
+         ></lightning-button>
+       </div>
+       <c-view-source source="lwc/ldsCreateRecord" slot="footer">
+         Create a custom form with default values and enforcing field security using 
+         getRecordCreateDefaults and generateRecordInputForCreate. 
+      </c-view-source>
+    </lightning-card>
+</template>
